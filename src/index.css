@@ -1,0 +1,153 @@
+
+*{
+  margin: 0px;
+  padding: 0px;
+  background-color:#242121 ;
+  color: white;
+}
+
+
+.nav-bar{
+height: 80px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: #292828;
+position: sticky;
+top: 0px;
+}
+
+
+.img-div-1{
+  display: flex;
+  background-color:  #292828;
+  justify-content: center;
+  align-items: center;
+  margin-left:2%;
+}
+
+.img-div-1>img:first-child{
+  background-color:  #292828;
+  height: 46px;
+}
+.img-div-1>img:last-child{
+  height: 25px;
+background-color:  #292828;
+}
+
+
+
+
+.img-div-3{
+  display: flex;
+  background-color:  #292828;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-right:2%;
+}
+
+.img-div-3>img{
+  background-color:  #292828;
+  height: 32px;
+}
+
+input{
+  width: 400px;
+  background-color:#373737;
+  height: 33px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  font-family:Arial, Helvetica, sans-serif;
+  display: flex;
+}
+
+.Search-bar{
+  background-color: #292828;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+button{
+  height: 33px;
+  width:140px ;
+  border: 1px solid #949393;
+  background-color: transparent;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+
+
+
+.Booklist{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px;
+  gap: 30px;
+}
+
+
+.book-img{
+  height: 300px;
+  width: 200px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.book-detail{
+  height: 500px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.book-detail1{
+ width: 400px;
+ height: 300px;
+ background-color: red;
+ display: flex;
+ overflow: hidden;
+}
+
+
+
+.book-detail1>div>div,.book-detail1>div>h2{
+  background-color: rgb(118, 134, 134);
+}
+
+
+
+
+
+
+.book-detail1>img{
+ width:50%;
+ height: 100%;
+ background-color: red;
+ display: flex;
+}
+
+
+
+@media screen and (max-width:800px) {
+  .img-div-1, .img-div-3{
+    display: none;
+  }
+  .Search-bar{
+    width: 800px;
+    display: flex;
+    justify-content: center;
+  }
+input{
+  width: 300px;
+}
+}
+
+
+
+
+
+
