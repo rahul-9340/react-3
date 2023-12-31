@@ -2,8 +2,13 @@ import React from "react";
 import { useState,useEffect } from "react";
 import axios from "axios";
 
-const BookDetails = ()=>{
-const[array,setarray] = useState([])
+const BookDetails = ({setarray,array,query})=>{
+
+
+if(query.length>0){
+  setarray(query)
+}
+
 
 
 useEffect(()=>{
@@ -24,36 +29,44 @@ return(
      <div className="book-detail">
 
         <div className="book-detail1">
-         
+         <div className="image-div">
          <img  src={array[0].volumeInfo.imageLinks.thumbnail} />
-         <div><h2>{array[0].volumeInfo.title}</h2>
+         </div>
+         
+         <div className="title-div">
+          <h2>{array[0].volumeInfo.title}</h2>
+          <div className="author-div">{array[0].volumeInfo.authors}</div>
          <div>{array[0].volumeInfo.description}</div>
          </div>
         </div>
         <div className="book-detail1">
-         
+         <div className="image-div">
          <img  src={array[1].volumeInfo.imageLinks.thumbnail} />
-         <div><h2>{array[1].volumeInfo.title}</h2>
+         </div>
+         
+         <div className="title-div">
+          <h2>{array[1].volumeInfo.title}</h2>
+          <div className="author-div">{array[1].volumeInfo.authors}</div>
          <div>{array[3].volumeInfo.description}</div>
          </div>
         </div>
         <div className="book-detail1">
-         
+         <div className="image-div">
          <img  src={array[2].volumeInfo.imageLinks.thumbnail} />
-         <div><h2>{array[2].volumeInfo.title}</h2>
+         </div>
+         
+         <div className="title-div">
+          <h2>{array[2].volumeInfo.title}</h2>
+          <div className="author-div">{array[0].volumeInfo.authors}</div>
          <div>{array[2].volumeInfo.description}</div>
          </div>
         </div>
-
-
-
        
-
      </div>
 
     }
-
-    <div>MORE BOOKS</div>
+    
+    <div className="more">MORE BOOKS</div>
     </div>
 )
 
